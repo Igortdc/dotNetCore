@@ -1,0 +1,11 @@
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\bin\Debug\netcoreapp1.1\ApiDotNetCoreConcept.deps.json
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\bin\Debug\netcoreapp1.1\ApiDotNetCoreConcept.runtimeconfig.json
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\bin\Debug\netcoreapp1.1\ApiDotNetCoreConcept.runtimeconfig.dev.json
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\bin\Debug\netcoreapp1.1\ApiDotNetCoreConcept.dll
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\bin\Debug\netcoreapp1.1\ApiDotNetCoreConcept.pdb
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\obj\Debug\netcoreapp1.1\ApiDotNetCoreConcept.csprojResolveAssemblyReference.cache
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\obj\Debug\netcoreapp1.1\ApiDotNetCoreConcept.AssemblyInfo.cs
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\obj\Debug\netcoreapp1.1\ApiDotNetCoreConcept.dll
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\obj\Debug\netcoreapp1.1\ApiDotNetCoreConcept.pdb
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\bin\Debug\netcoreapp1.1\Service.dll
+C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCoreConcept\ApiDotNetCoreConcept\bin\Debug\netcoreapp1.1\Service.pdb
