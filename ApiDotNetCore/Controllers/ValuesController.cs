@@ -6,10 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Service;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using ApiDotNetCore.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace ApiDotNetCoreConcept.Controllers
 {
-   // [ApiVersion("2")]
+   // [EnableCors("CorsPolicy")]
     [Route("api/v{version:apiVersion}/values")]
     public class ValuesController : Controller
     {
@@ -26,10 +28,11 @@ namespace ApiDotNetCoreConcept.Controllers
         [HttpGet("teste")]
         [Produces("application/json")]
         [Consumes("application/json")]
-        [ProducesResponseType(typeof(Person), 200)]
+        [ProducesResponseType(typeof(Usuario), 200)]
         [ProducesResponseType(404)]
         public IEnumerable<string> Get()
         {
+            //throw new Exception("teste");
             return _print.printConsole();    
         }
 

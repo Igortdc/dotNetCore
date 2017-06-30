@@ -8,6 +8,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using Service;
 using ApiDotNetCoreConcept.Controllers;
 using Microsoft.AspNetCore.Mvc.Versioning.Conventions;
+using ApiDotNetCore.Exceptions;
 
 namespace ApiDotNetCoreConcept
 {
@@ -30,16 +31,22 @@ namespace ApiDotNetCoreConcept
         {
             services.AddSingleton<IPrint, Print>();
             services.AddSingleton<IConfiguration>(Configuration);
-            string majorVersion = GetMajorVersion();
-            string minorVersion = GetMinorVersion();
-
+                     
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
             services.AddMvc();
 
             // ASP.NET API Versioning - Componente de Versionamento
             services.AddApiVersioning(options =>
             {
                 options.ReportApiVersions = true;
-                options.Conventions.Controller<ValuesController>().HasApiVersion(Int32.Parse(majorVersion), Int32.Parse(minorVersion));
+                options.Conventions.Controller<ValuesController>().HasApiVersion(GetMajorVersion(), GetMinorVersion());
             });
 
             // SWAGGER - Componente de Documentação dos Endpoints
@@ -55,6 +62,8 @@ namespace ApiDotNetCoreConcept
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
+            app.UseCors("CorsPolicy");
             app.UseMvc();
             app.UseApiVersioning();
             app.UseSwagger();
@@ -68,18 +77,18 @@ namespace ApiDotNetCoreConcept
         /// Recupera a MinorVersion da API
         /// </summary>
         /// <returns></returns>
-        private string GetMinorVersion()
+        private int GetMinorVersion()
         {
-            return Configuration.GetSection("AppSettings").GetSection("ApiVersion").GetSection("MinorVersion").Value;
+            return Int32.Parse(Configuration.GetSection("AppSettings").GetSection("ApiVersion").GetSection("MinorVersion").Value);
         }
 
         /// <summary>
         /// Recupera a MajorVersion da API
         /// </summary>
         /// <returns></returns>
-        private string GetMajorVersion()
+        private int GetMajorVersion()
         {
-            return Configuration.GetSection("AppSettings").GetSection("ApiVersion").GetSection("MajorVersion").Value;
+            return Int32.Parse(Configuration.GetSection("AppSettings").GetSection("ApiVersion").GetSection("MajorVersion").Value);
         }
     }
 }
