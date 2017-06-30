@@ -7042,10 +7042,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\igortc\\Desktop\\apitDotNetCore\\ApiDotNetCore\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\Users\\igortc\\Documents\\projetoDotNetCore\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\igortc\\Desktop\\apitDotNetCore\\ApiDotNetCore\\Service\\Service.csproj",
-      "outputPath": "C:\\Users\\igortc\\Desktop\\apitDotNetCore\\ApiDotNetCore\\Service\\obj\\",
+      "projectPath": "C:\\Users\\igortc\\Documents\\projetoDotNetCore\\Service\\Service.csproj",
+      "outputPath": "C:\\Users\\igortc\\Documents\\projetoDotNetCore\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

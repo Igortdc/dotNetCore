@@ -1,0 +1,9 @@
+C:\Users\igortc\Documents\projetoDotNetCore\ApiDotNetCore\bin\Debug\netcoreapp1.1\ApiDotNetCore.deps.json
+C:\Users\igortc\Documents\projetoDotNetCore\ApiDotNetCore\bin\Debug\netcoreapp1.1\ApiDotNetCore.runtimeconfig.json
+C:\Users\igortc\Documents\projetoDotNetCore\ApiDotNetCore\bin\Debug\netcoreapp1.1\ApiDotNetCore.runtimeconfig.dev.json
+C:\Users\igortc\Documents\projetoDotNetCore\ApiDotNetCore\bin\Debug\netcoreapp1.1\ApiDotNetCore.dll
+C:\Users\igortc\Documents\projetoDotNetCore\ApiDotNetCore\bin\Debug\netcoreapp1.1\ApiDotNetCore.pdb
+C:\Users\igortc\Documents\projetoDotNetCore\ApiDotNetCore\obj\Debug\netcoreapp1.1\ApiDotNetCore.csprojResolveAssemblyReference.cache
+C:\Users\igortc\Documents\projetoDotNetCore\ApiDotNetCore\obj\Debug\netcoreapp1.1\ApiDotNetCore.AssemblyInfo.cs
+C:\Users\igortc\Documents\projetoDotNetCore\ApiDotNetCore\obj\Debug\netcoreapp1.1\ApiDotNetCore.dll
+C:\Users\igortc\Documents\projetoDotNetCore\ApiDotNetCore\obj\Debug\netcoreapp1.1\ApiDotNetCore.pdb

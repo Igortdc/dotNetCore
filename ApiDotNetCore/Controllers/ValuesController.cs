@@ -5,29 +5,37 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Service;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 
 namespace ApiDotNetCoreConcept.Controllers
 {
-    [Route("api/[controller]")]
+   // [ApiVersion("2")]
+    [Route("api/v{version:apiVersion}/values")]
     public class ValuesController : Controller
     {
         private readonly IPrint _print;
-     
-        public ValuesController(IPrint print)
+        IConfiguration _iconfiguration;
+
+        public ValuesController(IPrint print, IConfiguration iconfiguration)
         {
             _print = print;
+            _iconfiguration = iconfiguration;
         }
 
         // GET api/values
-        [HttpGet]
+        [HttpGet("teste")]
+        [Produces("application/json")]
+        [Consumes("application/json")]
+        [ProducesResponseType(typeof(Person), 200)]
+        [ProducesResponseType(404)]
         public IEnumerable<string> Get()
         {
-            return _print.printConsole();
-             
+            return _print.printConsole();    
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
+        [Produces("application/json")]
         public string Get(int id)
         {
             return "value";

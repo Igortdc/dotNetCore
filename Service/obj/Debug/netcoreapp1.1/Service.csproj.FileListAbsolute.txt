@@ -12,3 +12,10 @@ C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCore\Service\obj\Debug\netcoreap
 C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCore\Service\obj\Debug\netcoreapp1.1\Service.AssemblyInfo.cs
 C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCore\Service\obj\Debug\netcoreapp1.1\Service.dll
 C:\Users\igortc\Desktop\apitDotNetCore\ApiDotNetCore\Service\obj\Debug\netcoreapp1.1\Service.pdb
+C:\Users\igortc\Documents\projetoDotNetCore\Service\bin\Debug\netcoreapp1.1\Service.deps.json
+C:\Users\igortc\Documents\projetoDotNetCore\Service\bin\Debug\netcoreapp1.1\Service.dll
+C:\Users\igortc\Documents\projetoDotNetCore\Service\bin\Debug\netcoreapp1.1\Service.pdb
+C:\Users\igortc\Documents\projetoDotNetCore\Service\obj\Debug\netcoreapp1.1\Service.csprojResolveAssemblyReference.cache
+C:\Users\igortc\Documents\projetoDotNetCore\Service\obj\Debug\netcoreapp1.1\Service.AssemblyInfo.cs
+C:\Users\igortc\Documents\projetoDotNetCore\Service\obj\Debug\netcoreapp1.1\Service.dll
+C:\Users\igortc\Documents\projetoDotNetCore\Service\obj\Debug\netcoreapp1.1\Service.pdb
